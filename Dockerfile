@@ -1,2 +1,3 @@
-FROM nginx:1.7
-COPY index.html /usr/share/nginx/html/index.html
+FROM centos:7
+#VOLUME /tmp/data
+CMD ping localhost

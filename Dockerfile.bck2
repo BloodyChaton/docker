@@ -1,0 +1,4 @@
+FROM centos:7 AS luc
+CMD echo "Hello World"
+FROM centos:7 AS rim
+CMD echo "Bonjour à tous"
