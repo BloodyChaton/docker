@@ -2,12 +2,13 @@ version: '2'
 
 services:
   nginx:
-    build: Dockerfiles
-    # autre possibilite pour build:
-    #build:
-    #  context: Dockerfiles
-    #  et optionnelement on précise le nom du Dockerfile dans le dossier ciblé par context
-    #  dockerfile: Dockerfile
+    # build: Dockerfiles
+    build:
+      context: ./nginx_centos
+      dockerfile: Dockerfile_alt
+      args:
+        lien: http://www.brainjar.com/java/host/test.html 
+        lol: /usr/share/nginx/html/index.html
     container_name: nginx_centos_ontainer
     ports:
       - 8000:80
