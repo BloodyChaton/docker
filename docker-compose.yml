@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  nginx:
+    build: Dockerfiles
+    # autre possibilite pour build:
+    #build:
+    #  context: Dockerfiles
+    #  et optionnelement on précise le nom du Dockerfile dans le dossier ciblé par context
+    #  dockerfile: Dockerfile
+    container_name: nginx_centos_ontainer
+    ports:
+      - 8000:80
