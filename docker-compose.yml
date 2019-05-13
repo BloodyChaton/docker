@@ -9,6 +9,6 @@ services:
       args:
         lien: http://www.brainjar.com/java/host/test.html 
         lol: /usr/share/nginx/html/index.html
-    container_name: nginx_centos_ontainer
-    ports:
-      - 8000:80
+    #container_name: nginx_centos_ontainer
+    #ports:
+    #  - 8000:80
